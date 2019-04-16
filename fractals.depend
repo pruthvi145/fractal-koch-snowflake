@@ -22,7 +22,7 @@
 1555365151 source:f:\code\cpp\fractals\src\segment.cpp
 	"Segment.h"
 
-1555365741 source:f:\code\cpp\fractal-snowflake\main.cpp
+1555399454 source:f:\code\cpp\fractal-snowflake\main.cpp
 	<iostream>
 	<graphics.h>
 	<vector>
@@ -42,6 +42,6 @@
 1555344994 source:f:\code\cpp\fractal-snowflake\src\point.cpp
 	"Point.h"
 
-1555365151 source:f:\code\cpp\fractal-snowflake\src\segment.cpp
+1555399763 source:f:\code\cpp\fractal-snowflake\src\segment.cpp
 	"Segment.h"
 

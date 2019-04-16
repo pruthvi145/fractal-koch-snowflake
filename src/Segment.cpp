@@ -40,7 +40,6 @@ void Segment::print()
 float Segment::getangle(Point p1, Point p2)
 {
    float res;
-   float m = (p2.y - p1.y)/(p2.x - p1.x);
    res = atan2((p2.y - p1.y),(p2.x - p1.x));
    return res;
 }

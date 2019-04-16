@@ -14,13 +14,13 @@ void triangle(Point a, Point b, Point c)
     Segment s1(a,b);
     Segment s2(b,c);
     Segment s3(c,a);
-
+    cout<<sizeof(s1)<<endl;
     s1.show();
     s2.show();
     s3.show();
     allsegments.push_back(s1);
-    allsegments.push_back(s2);
-    allsegments.push_back(s3);
+    //allsegments.push_back(s2);
+    //allsegments.push_back(s3);
 }
 
 void setup()
@@ -33,7 +33,7 @@ void setup()
     Point b2(750,300);
     Point c2(600,600);
 
-    triangle(a2,b2,c2);
+    //triangle(a2,b2,c2);
 }
 void loop()
 {
@@ -47,18 +47,23 @@ void loop()
     }
 
     allsegments = nextchildren;
-    for(unsigned i=0; i<allsegments.size(); i++)
+    int i;
+    for(i=0; i<allsegments.size(); i++)
     {
-        cout<<"Wait..."<<endl;
+        cout<<"Drawing..."<<endl;
          //allsegments[i].print();
          allsegments[i].show();
+         //delay(1);
     }
+    //cout<<i<<endl;
+    cout<<allsegments.capacity()<<"Segments Drawn!"<<endl;
 }
 
 int main()
 {
     initwindow(1200,1200);
-
+    cout<<allsegments.max_size()<<endl;
+    cout<<allsegments.capacity()<<endl;
 
     setup();
     int i=0;
@@ -68,7 +73,9 @@ int main()
         cleardevice();
         loop();
         i++;
+        cout<<"DONE: "<<i<<endl;
     }
+    cout<<"...................HAPPY MOMENTS.................. "<<endl;
     getch();
     closegraph();
     return 0;
