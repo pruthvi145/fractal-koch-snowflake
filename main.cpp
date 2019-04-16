@@ -56,7 +56,7 @@ void loop()
          //delay(1);
     }
     //cout<<i<<endl;
-    cout<<allsegments.capacity()<<"Segments Drawn!"<<endl;
+    cout<<allsegments.capacity()<<" - Segments Drawn!"<<endl;
 }
 
 int main()
