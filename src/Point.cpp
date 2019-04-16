@@ -1,8 +1,5 @@
 #include "Point.h"
 
-
-using namespace std;
-
 Point::Point(){}
 
 Point::Point(int x, int y)
@@ -13,9 +10,9 @@ Point::Point(int x, int y)
 
 void Point::print()
 {
-  cout<<"x: "<<this->x<<endl;
-  cout<<"y: "<<this->y<<endl;
-  cout<<endl;
+  std::cout<<"x: "<<this->x<<std::endl;
+  std::cout<<"y: "<<this->y<<std::endl;
+  std::cout<<std::endl;
 }
 
 Point Point:: operator+(Point a)

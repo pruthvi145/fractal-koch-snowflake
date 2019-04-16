@@ -1,12 +1,11 @@
 #ifndef SEGMENT_H
 #define SEGMENT_H
 
-#include<graphics.h>
 #include<iostream>
-#include "Point.h"
 #include<vector>
+#include<graphics.h>
 
-using namespace std;
+#include "Point.h"
 
 class Segment
 {
@@ -16,17 +15,13 @@ class Segment
 
     public:
         Segment();
-
         Segment(Point, Point);
-        Segment(const Segment&);
+
         void setpoints(Point, Point);
+        void print();
         Segment* generatechild();
         float getangle(Point, Point);
         void show();
-        void print();
-
-    protected:
-
 };
 
 #endif // SEGMENT_H

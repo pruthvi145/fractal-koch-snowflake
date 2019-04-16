@@ -18,7 +18,6 @@ class Point
         Point operator-(Point);
         Point operator/(int);
 
-
 };
 
 #endif // POINT_H
