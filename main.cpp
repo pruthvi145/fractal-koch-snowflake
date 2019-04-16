@@ -19,8 +19,8 @@ void triangle(Point a, Point b, Point c)
     s2.show();
     s3.show();
     allsegments.push_back(s1);
-    //allsegments.push_back(s2);
-    //allsegments.push_back(s3);
+    allsegments.push_back(s2);
+    allsegments.push_back(s3);
 }
 
 void setup()
