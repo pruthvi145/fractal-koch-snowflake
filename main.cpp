@@ -1,7 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<graphics.h>
-#include<time.h>
+#include<time.h> //used for random number generation
 
 #include "Point.h"
 #include "Segment.h"
@@ -25,16 +25,17 @@ int random(int min, int max) //range : [min, max]
 
 void drawallsegments()
 {
-    for(unsigned i=0; i<allsegments.size(); i++)
+    unsigned i;
+    for(i=0; i<allsegments.size(); i++)
     {
         short r = random(1,255);
         short g = random(1,255);
         short b = random(1,255);
         setcolor(COLOR(r,g,b));
-        cout<<"Drawing: "<<i<<endl;
+        //cout<<"Drawing: "<<i<<endl;
         allsegments[i].show();
     }
-    cout<<allsegments.capacity()<<" - Segments Drawn!"<<endl;
+    cout<<i<<" - Segments Drawn!"<<endl;
 }
 
 void setup()
@@ -75,7 +76,7 @@ int main()
     settextjustify(CENTER_TEXT,CENTER_TEXT);
     outtextxy(getmaxx()/2,getmaxy()/2,"KOCH - SNOWFLAKES");
     cout<<"...................START DRAWING.................. "<<endl;
-    for(short i=1; i<=7 ;i++)
+    for(short i=1; i<=9; i++)
     {
         cout<<"START: "<<i<<endl;
         cout<<"-----------"<<endl;

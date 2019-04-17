@@ -1,0 +1,9 @@
+Without COUT
+------------
+10 - avg: 89.576s - 786438 Segments
+9  - avg: 22.976s - 196608 Segments
+
+Without COUT
+------------
+10 - avg: 283.876s - 786438 Segments
+9  - avg: 71.577s  - 196608 Segmnets 
